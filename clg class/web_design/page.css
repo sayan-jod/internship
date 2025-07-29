@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    scroll-behavior: smooth;
+}
+.navbar{
+    
+    background-color: black;
+    padding: 0 15px;
+    
+}
+.nav{
+    width: 80%;
+}
+.brand{
+    width: 20%;
+}
+.logo{
+    width: 120px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+.nav ul li{
+
+    display: inline-block;
+    padding: 5px 6px;
+
+}
+.nav ul{
+    list-style: none;
+    float: right;
+}
+.nav ul li a:hover{
+    color: bisque;
+}
+.responsive{
+    max-width: 100%;
+}
+.about{
+    background: linear-gradient(114deg,black,blue);
+    display: flex;
+    padding: 30px;
+    margin-top: -5px;
+
+    
+}
+.content{
+    width: 70%;
+    color: aliceblue;
+
+}
+.image{
+    width: 30%;
+
+}
+.booknow{
+    color: antiquewhite;
+    background-color: black;
+    outline: none;
+    border: 1px solid white;
+    padding: 5px 23px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.mobile_list table{
+    border: 10px double rgb(43, 86, 226);
+}

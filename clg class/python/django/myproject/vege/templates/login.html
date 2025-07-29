@@ -1,0 +1,39 @@
+{% extends "ecomerce/base.html" %}
+{% block start %}
+{% load static %}
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <h3 class="text-center">Login</h3>
+                    <form method="post" enctyp="multipart/form-data">
+                        {% csrf_token %}
+                        {% if messages%}
+                           <div class="alert alert-primary" role="alert">
+                               {% for messages in messages %}
+                               {{ messages }}
+                               {% endfor %}
+                        </div>
+                        {% endif %}
+                        <div class="mb-3">
+                            <label for="user_name" class="form-label">UserName</label>
+                            <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Enter User Name" value="">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="password"></input>
+                        </div>
+            
+                        <button type="submit" class="btn btn-success">Login</button>
+                        <p>Don't have an account ? <a href="/user_register/">REGISTER</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    }
+    h1{
+        color: #1b74e4;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .btn{
+        background-color: rgb(17, 235, 243);
+        border-radius: 10px;
+    }
+    #searchbtn{
+        background-color: black;
+        color: azure;
+        border-radius: 15px;
+    
+    }

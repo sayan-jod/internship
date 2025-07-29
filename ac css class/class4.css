@@ -1,0 +1,90 @@
+.margin{
+    background-color: aqua;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+}
+
+.check{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: 200px 0px 100px 200px ;
+}
+.xyz{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    margin: 20px 20px;
+}
+/*
+margin:20px;
+margin-top ; margin-bottom ; margin-left ; margin-right
+margin : 20px 20px 20px 20px;
+margin : 20px 20px
+
+
+     first 20px== margin for top and bottom
+     second 20px== margin for left and right
+
+*/
+.abc{
+    background-color: rgb(128, 0, 255); 
+    width: 400px;
+    height: 400px;
+    color: aqua;
+    font-size: 30px;
+    padding-left: 60px;
+    border: 7px solid red;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 5px;
+
+/*
+TASK
+try:
+1.padding-top
+2.padding-bottom
+3.padding-right
+4.padding-left
+5.shorthand notation for padding
+
+*/
+}
+/*
+block-level elements---starts on new lines[that means take the full width available].example: div h1,p,form 
+inline = do not start on new line. width is limited 
+
+display properties-
+1.display :block
+2.display :inline
+3.display :none
+4.display :inline-block
+5.visibility :hidden
+
+*/
+
+
+h1{
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.block{
+    background-color: brown;
+   height: 100px;
+   width: 100px;
+   display: inline;
+   font-size: 30px;
+   
+}
+.inline{
+background-color: blue;
+height: 100px;
+width: 100px;
+display: inline-block;
+margin: 20px;
+}
+
+
+/* display block  */

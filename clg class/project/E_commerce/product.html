@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="shortcut icon" href="../assets/images/fav_icon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+    <div class="container-fluid">
+      <a class="border-end px-3 navbar-brand brandLogo" href="index.html">
+        <img src="./asset/img/blinkit.png" alt="logo">
+      </a>
+      <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+
+        <div>
+          <h5 class="fw-bold mb-0">Delivery in 11 minutes</h5>
+          <p class="dropdown-toggle">Bhubaneswar, Odisha, India</p>
+        </div>
+        <form class="d-flex search" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn dropdown-toggle accuntBtn" data-bs-toggle="modal" data-bs-target="#account">
+          Account
+        </button>
+
+        <button type="button" class="btn text-light fw-bold p-3 cardBtn"><i
+            class="fa-solid fa-cart-shopping me-3"></i>My Card</button>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- main section -->
+
+
+  <nav class="nav flex-column productnav position-sticky" style="top: 0; left: 0; width: 15em;">
+    <a class="nav-link active" aria-current="page" href="#">Soda</a>
+    <a class="nav-link" href="#">Mango drink</a>
+    <a class="nav-link" href="#">Orange Drink</a>
+    <a class="nav-link" href="#">mosambi ka juice</a>
+    <a class="nav-link" href="#">strawberry drink</a>
+    <a class="nav-link" href="#">Orange Drink</a>
+    <a class="nav-link" href="#">Orange Drink</a>
+    <a class="nav-link" href="#">Orange Drink</a>
+    <a class="nav-link" href="#">Orange Drink</a>
+    <a class="nav-link" href="#">Orange Drink</a>
+    <a class="nav-link" href="#">Orange Drink</a>
+    <a class="nav-link" href="#">Orange Drink</a>
+    <a class="nav-link" href="#">Orange Drink</a>
+
+  </nav>
+  
+  <div class="container my-6 product ">
+    <div class="row mx-6 p-3" style="margin-left: calc(5.5 * var(--bs-gutter-x));">
+      <div class="card mx-3 my-2 col-md-3 p-3" style="width: 15rem;">
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/e69c587d-802a-40eb-a40b-a6bc9623526d.jpg?ts=1707312325"
+          alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Thums Up</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">500ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$26</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/images/products/sliding_image/15288a.jpg?ts=1698840601"
+          alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Coca-Cola</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">200ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$16</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/f55639f4-29da-4688-8433-cefda2162853.jpg" alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Coconut water</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">600ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$6</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/4e6d5abf-e75c-471b-926c-ce112bf36254.jpg?ts=1725344236" alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Amul Lassi</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">200ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$8</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/48ba191c-1cf8-4721-a6d2-d842354c9e90.jpg?ts=1739950239" alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Nescafe Cold Cofee</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">250ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$26</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3 p-3" style="width: 15rem;">
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/e69c587d-802a-40eb-a40b-a6bc9623526d.jpg?ts=1707312325"
+          alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Thums Up</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">500ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$26</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/images/products/sliding_image/15288a.jpg?ts=1698840601"
+          alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Coca-Cola</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">200ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$16</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/f55639f4-29da-4688-8433-cefda2162853.jpg" alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Coconut water</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">600ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$6</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/4e6d5abf-e75c-471b-926c-ce112bf36254.jpg?ts=1725344236" alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Amul Lassi</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">200ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$8</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/48ba191c-1cf8-4721-a6d2-d842354c9e90.jpg?ts=1739950239" alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Nescafe Cold Cofee</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">250ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$26</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3 p-3" style="width: 15rem;">
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/e69c587d-802a-40eb-a40b-a6bc9623526d.jpg?ts=1707312325"
+          alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Thums Up</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">500ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$26</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/images/products/sliding_image/15288a.jpg?ts=1698840601"
+          alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Coca-Cola</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">200ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$16</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/f55639f4-29da-4688-8433-cefda2162853.jpg" alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Coconut water</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">600ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$6</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/4e6d5abf-e75c-471b-926c-ce112bf36254.jpg?ts=1725344236" alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Amul Lassi</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">200ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$8</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/48ba191c-1cf8-4721-a6d2-d842354c9e90.jpg?ts=1739950239" alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Nescafe Cold Cofee</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">250ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$26</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3 p-3" style="width: 15rem;">
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/e69c587d-802a-40eb-a40b-a6bc9623526d.jpg?ts=1707312325"
+          alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Thums Up</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">500ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$26</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/images/products/sliding_image/15288a.jpg?ts=1698840601"
+          alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Coca-Cola</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">200ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$16</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/f55639f4-29da-4688-8433-cefda2162853.jpg" alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Coconut water</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">600ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$6</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/4e6d5abf-e75c-471b-926c-ce112bf36254.jpg?ts=1725344236" alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Amul Lassi</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">200ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$8</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/48ba191c-1cf8-4721-a6d2-d842354c9e90.jpg?ts=1739950239" alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Nescafe Cold Cofee</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">250ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$26</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3 p-3" style="width: 15rem;">
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/e69c587d-802a-40eb-a40b-a6bc9623526d.jpg?ts=1707312325"
+          alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Thums Up</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">500ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$26</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/images/products/sliding_image/15288a.jpg?ts=1698840601"
+          alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Coca-Cola</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">200ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$16</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/f55639f4-29da-4688-8433-cefda2162853.jpg" alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Coconut water</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">600ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$6</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/4e6d5abf-e75c-471b-926c-ce112bf36254.jpg?ts=1725344236" alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Amul Lassi</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">200ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$8</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mx-3 my-2 col-md-3" style="width: 15rem;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/assets/products/sliding_images/jpeg/48ba191c-1cf8-4721-a6d2-d842354c9e90.jpg?ts=1739950239" alt="" srcset="">
+        <div class="card-body">
+          <p class="fw-bold">Nescafe Cold Cofee</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary">250ml</h6>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="card-link">$26</a>
+            <a href="#" class="card-link buybtn"><button class="btn btn-outline-primary btn-lg">buy</button></a>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com/shankhadip.patra.7" target="_blank" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful Link
+            </h6>
+            <p>
+              <a href="#" class="text-reset">About us</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+  </footer>
+</body>
+
+</html>

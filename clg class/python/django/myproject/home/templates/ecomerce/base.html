@@ -1,0 +1,161 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page}}</title>
+    <link rel="shortcut icon" href="{% static 'images/fav_icon.png' %}" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+        <div class="container-fluid">
+            <a class="border-end px-3 navbar-brand brandLogo" href="/ecomerce/">
+                <img src="{% static 'images/logo.png' %}" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+
+                <div>
+                    <h5 class="fw-bold mb-0">Delivery in 11 minutes</h5>
+                    <p class="dropdown-toggle">Bhubaneswar, Odisha, India</p>
+                </div>
+
+
+                <form class="d-flex search" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn dropdown-toggle accuntBtn" data-bs-toggle="modal"
+                    data-bs-target="#account">
+                    Account
+                </button>
+
+                <button type="button" class="btn text-light fw-bold p-3 cardBtn" data-bs-toggle="offcanvas" data-bs-target="#myCartSection"><i class="fa-solid fa-cart-shopping me-3"></i>My Card</button>
+
+            </div>
+        </div>
+    </nav>
+    <!-- End Nav -->
+
+
+    <nav class="navbar bg-body-dark" data-bs-theme="">
+        <div class="container-fluid">
+            <a class="navbar-brand">Navbar</a>
+          <form class="d-flex" role="search">
+           {% if request.user.is_authenticated %}
+
+
+            <a href="/logout/" class="btn btn-success ms-2">logout</a>
+            {% else %}
+            <a href="/user_login/" class="btn btn-success ms-2">login</a>
+            {% endif %}
+          </form>
+        </div>
+      </nav>
+
+        {% block start %}
+        
+
+        {% endblock %}
+
+
+
+    <hr>
+
+        <div class="container-fluid footer pt-5 px-3 ">
+            <div class="row">
+                <div class="col-md-2">
+                    <h5>Useful Links</h5>
+                    <ul>
+                        <li><a href="/ecomerce/aboutus/">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="/ecomerce/contactus/">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Our Locations</h5>
+                    <ul>
+                        <li>Mumbai, India</li>
+                        <li>Pune, India</li>
+                        <li>Delhi, India</li>
+                        <li>Bangalore, India</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Subscribe to Our Newsletter</h5>
+                    <form>
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social_icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+    
+                </div>
+                <div class="6">
+                    <h5>Payment Methods</h5>
+                    <img src="assets/images/payment_methods.png" alt="" class="img-fluid">
+             
+                    <h5>Return & Refund Policy</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel neque vel neque efficitur.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal" id="account">
+            <div class="modal-dialog acuntModel">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h5>My Accopunt</h5>
+                        <p>7008438639</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--My Cart offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="myCartSection" >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title">My Cart</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" ></button>
+            </div>
+
+            <div class="offcanvas-body crd_bdy">
+                <div class="card">
+                    <div class="card-body">
+                        
+                    </div>
+                </div>
+          </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

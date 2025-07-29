@@ -1,0 +1,96 @@
+{% extends "ecomerce/base.html" %}
+{% block start %}
+{% load static %}
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h3 class="text-center">Add Receipe</h3>
+                        <form method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <label for="receipe_name" class="form-label">Receipe Name</label>
+                                <input type="text" class="form-control" id="receipe_name" name="receipe_name" placeholder="Enter Receipe Name">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="receipe_description" class="form-label">Receipe Description</label>
+                                <textarea class="form-control" id="receipe_description" name="receipe_description" rows="3"></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="receipe_image" class="form-label">Receipe Image</label>
+                                <input type="file" class="form-control" id="receipe_image" name="receipe_image" >
+                            </div>
+                
+                            <button type="submit" class="btn btn-success">Add Recipe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    {% if receipes%}
+    {{receipes| length}} receipes found
+    {%else%}
+       no receipes found 
+    {% endif %}
+
+
+
+    {{receipes}}
+    
+    <br>
+    <div>
+        <div class=mx-auto col-6>
+            <form action="">
+                <div class="mb-3">
+                    <label for="receipe_name" class="form-label">Search food</label>
+                    <input type="text" class="form-control" id="receipe_name" name="Search"
+                     placeholder="search_item">
+                </div>
+                <button type="submit" class="btn btn-primary">search</button>
+
+            </form>
+        </div>
+    </div>
+    
+    
+
+    <div class = "container">
+        <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Receipe Name</th>
+                <th scope="col">Receipe Desc</th>
+                <th scope="col">Image</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+            {% for receipe in receipes %}
+              <tr>
+                <th scope="row">{{forloop.counter}}</th>
+                <td>{{receipe.receipe_name}}</td>
+                <td>{{receipe.receipe_description}}</td>
+                <td>
+                    <img src="/media/{{receipe.receipe_image}}" alt="Receipe_image" height="100px" />
+                </td>
+                <td>
+                    <a href="/delete_receipe/{{receipe.id}}/" class="btn btn-danger">Delete</a>
+                    <a href="/update_receipe/{{receipe.id}}/" class="btn btn-primary">Edit</a>
+                </td>
+              </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+    </div>
+
+
+{% endblock %}

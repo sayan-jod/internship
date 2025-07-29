@@ -1,0 +1,36 @@
+{% extends "ecomerce/base.html" %}
+{% block start %}
+{% load static %}
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <h3 class="text-center">Update Receipe</h3>
+                    <form method="post" enctyp="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="receipe_name" class="form-label">Receipe Name</label>
+                            <input type="text" class="form-control" id="receipe_name" name="receipe_name" placeholder="Enter Receipe Name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="receipe_description" class="form-label">Receipe Description</label>
+                            <textarea class="form-control" id="receipe_description" name="receipe_description" rows="3">{{receipes.receipe_description}}</textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="receipe_image" class="form-label">Receipe Image</label>
+                            <input type="file" class="form-control" id="receipe_image" name="receipe_image" >
+                        </div>
+            
+                        <button type="submit" class="btn btn-success">Add Recipe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

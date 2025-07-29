@@ -1,0 +1,162 @@
+{% extends "ecomerce/base.html" %}
+{% block start %}
+{% load static %}
+
+    
+
+    <!-- Start Footer Section -->
+    <div id="bnar_id" class="carousel slide px-4 py-3 carousel-dark" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#bnar_id" data-bs-slide-to="0" class="active"></button>
+
+            <button type="button" data-bs-target="#bnar_id" data-bs-slide-to="1"></button>
+
+            <button type="button" data-bs-target="#bnar_id" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner rounded">
+            <div class="carousel-item rounded active bnr_img">
+                <img src="{% static 'images/banner1.webp' %}" class="d-block w-100 img-fluid rounded" alt="...">
+            </div>
+            <div class="carousel-item rounded bnr_img">
+                <img src="{% static 'images/banner2.jpeg'%}" class="d-block w-100 img-fluid rounded" alt="...">
+            </div>
+            <div class="carousel-item rounded bnr_img">
+                <img src="{%static 'images/banner3.jpeg'%}" class="d-block w-100 img-fluid rounded" alt="...">
+            </div>
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#bnar_id" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bnar_id" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="product.html">
+                            <img src="{% static 'images/card_img.avif'%}" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="product.html">
+                            <img src="{% static 'images/card_img.avif' %}" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="product.html">
+                            <img src="{% static 'images/card_img.avif' %}" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="card my-2">
+                        <a href="product.html">
+                            <img src="assets/images/catagory.avif" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card my-2">
+                        <img src="assets/images/catagory.avif" alt="">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card my-2">
+                        <img src="assets/images/catagory.avif" alt="">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card my-2">
+                        <img src="assets/images/catagory.avif" alt="">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card my-2">
+                        <img src="assets/images/catagory.avif" alt="">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card my-2">
+                        <img src="assets/images/catagory.avif" alt="">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card my-2">
+                        <img src="assets/images/catagory.avif" alt="">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card my-2">
+                        <img src="assets/images/catagory.avif" alt="">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card my-2">
+                        <img src="assets/images/catagory.avif" alt="">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card my-2">
+                        <img src="assets/images/catagory.avif" alt="">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card my-2">
+                        <img src="assets/images/catagory.avif" alt="">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card my-2">
+                        <img src="assets/images/catagory.avif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid prdt_Section px-5 py-3 ">
+            <div class="d-flex justify-content-between">
+                <h3>Dairy, Bread & Eggs</h3>
+                <a href="" class="link-success fw-bold">See All</a>
+            </div>
+
+            <div class="d-flex gap-2">
+                {% for receipe in receipes %}
+                <div class="card prdtCard">
+                    <a href="#" class="prdt_img">
+                        <img src="/media/{{receipe.receipe_image}}" alt="Receipe_image" height="100px" />
+                    </a>
+
+                    <div class="card-body">
+                        <p class="d_time">12 min</p>
+                        <a class="card-title fw-bold prd_name" href="#">{{receipe.receipe_name}}</a>
+                        <p class="card-text">1 piecs</p>
+                        <div class="d-flex justify-content-between">
+                            <h6 class="price">₹ 80</h6>
+                            <a href="#" class="btn btn-outline-warning text-warning">Add</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                
+            </div>
+        </div>
+
+        </div>
+{% endblock %}

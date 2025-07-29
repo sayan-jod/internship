@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+.nav_top {
+    background-color: #d4cdcd;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: end;
+}
+
+.nav_top button {
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: rgb(199, 172, 225);
+    border: none;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.business_btn i{
+    rotate: 316deg;
+}
+
+.myNav {
+    display: flex;
+}
+
+.myNav li {
+    padding: 20px;
+    list-style-type: none;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    height: 90vh;
+    width: 100%;
+}
+
+.srch_icon {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    margin-right: 20px;
+}
+
+.search-container i {
+    position: relative;
+    left: 25px;
+    color: #7c7a7a;
+}
+.search-container input {
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    background-color: aqua;
+    outline: none;
+}
+/*input[type="search"] {}*/
+
+.social-media i{
+    margin-right: 10px;
+    color: #7c7a7a;
+}
+.text-content {
+    position: absolute;
+    top: 40%;
+    left: 100px;
+}
+.highlights {
+    padding: 30px;
+}
+.grid_container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+.item {
+    background-color: rgb(202, 190, 214);
+    border-radius: 20px;
+}
+.item img {
+    border-radius: 20px;
+    width: 100%;
+}
+.item1  {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.mobile_list {
+    padding: 30px;
+}
+.mobile_list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.mobile_list table,th,td{
+    border: 2px double blueviolet;
+}
+td {
+    text-align: center;
+    /*vertical-align: baseline;*/
+}
+th {
+    width: 100px;
+    padding: 5px;
+}
+.register{
+    margin: 50px;
+    border: 3px double black;
+    width: 500px;
+    background-color: #7c7a7a;
+}
+.register form
+{
+    padding: 20px;
+}
+.register h1{
+    color: rgb(0, 0, 7);
+    text-align: center ;
+}
+.register h3{
+    text-align: center;
+}
+.register form input{
+    padding: 10px;
+    width: 90%;
+}
+.register button{
+    margin-left: 40%;
+}

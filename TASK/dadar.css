@@ -1,0 +1,21 @@
+h1{
+    background-color: aquamarine;
+    font-display: algerian;
+    flood-color: yellowgreen;
+    padding: 0% 40%;
+    border: black;
+}
+
+
+.form{
+    background-color: rgb(0, 229, 255);
+    padding: 25px;
+    border: 5px solid blue;
+    margin: 10px;
+    border-radius: 10px;
+    
+}
+
+button[type="submit"]:hover{
+    background-color: rgb(255, 0, 0);
+}
